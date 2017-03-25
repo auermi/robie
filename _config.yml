@@ -1,0 +1,8 @@
+ga:
+menu:
+  - page: home
+    directory: /
+  - page: archive
+    directory: archives/
+  - page: about
+    directory: about/

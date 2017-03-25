@@ -1,0 +1,11 @@
+nav
+  div
+    h1
+      a(href='/')
+        = config.title
+    h2
+      = config.subtitle
+  ul.menu
+    each menuItem in theme.menu
+      li.menu__item
+        a(href=url_for(menuItem.directory))= __(menuItem.page)
