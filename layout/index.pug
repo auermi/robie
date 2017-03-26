@@ -8,6 +8,9 @@ block content
     .posts.typo
       for post in page.posts.toArray()
           .post
+            h2=asset_img
+            img(src=`/source/_posts/${post.slug}/${post.thumbnail}`)
+            img(src=post.thumbnail)
             h2.post__title
               a(href=url_for(post.path))
                 = post.title
