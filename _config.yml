@@ -1,8 +1,35 @@
-ga:
-menu:
-  - page: home
-    directory: /
-  - page: archive
-    directory: archives/
-  - page: about
-    directory: about/
+nav:
+  Work: /
+  About: /about/
+
+customize:
+    favicon:
+      # eg. generate with http://realfavicongenerator.net/
+      desktop:
+        url: /images/favicon.ico
+      android:
+        url: /images/favicon-192x192.png
+      apple:
+        url: /images/apple-touch-icon.png
+    social_links:
+        github: https://github.com/auermi/
+        twitter: https://twitter.com/auermi/
+        facebook: /
+        linkedin: https://linkedin.com/auermi/
+    post_count: 5
+
+# RSS
+rss: false
+
+# Plugins
+plugins:
+    google_analytics: # enter the tracking ID for your Google Analytics
+
+# Miscellaneous
+miscellaneous:
+    open_graph: # see http://ogp.me
+        image:
+        fb_app_id:
+        fb_admins:
+        twitter_id:
+        google_plus:
