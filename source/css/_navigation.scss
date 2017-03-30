@@ -1,1 +1,11 @@
-
+header {
+  height: 120px;
+  nav {
+    ul {
+      list-style-type: none;
+      li:not(:first-child) {
+        margin-left: 32px;
+      }
+    }
+  }
+}

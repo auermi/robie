@@ -4,7 +4,7 @@ $serif: Georgia, Cambria, 'Times New Roman', Times, serif;
 h1 {
   font-size: 48px;
   line-height: 100%;
-  color: $gold;
+  color: $grey-dark;
   font-family: $sans-serif;
   margin: 48px 0 32px;
 }
@@ -15,4 +15,38 @@ h2 {
   color: $grey-dark;
   font-family: $sans-serif;
   margin: 32px 0 16px;
+}
+
+.title-site {
+  font-size: 28px;
+  line-height: 100%;
+  color: $grey-dark;
+  font-family: $sans-serif;
+  margin: 0;
+  text-decoration: none;
+}
+
+.link-text {
+  font-size: 20px;
+  line-height: 100%;
+  color: $gold;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  &:hover {
+    &:after {
+      height: 17px;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: $gold;
+    opacity: 0.25;
+    height: 4px;
+    width: 100%;
+    bottom: 4px;
+    left: 0;
+    transition: .05s ease-in all;
+  }
 }
